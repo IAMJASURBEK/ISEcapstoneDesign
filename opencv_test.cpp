@@ -14,6 +14,5 @@ waitKey(0); // Wait for a keystroke in the window
 return 0;
 }
 
-// Execution command:
-// g++ opencv_test.cpp -o opencv_test -I/usr/local/include/opencv4 -I/usr/local/include -L/usr/local/lib -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_core
+
 
