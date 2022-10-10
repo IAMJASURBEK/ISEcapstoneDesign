@@ -1,6 +1,4 @@
-//////////////////////////////////////////////////////
-//Edge_Detection_Using_RaspiCam
-/////////////////////////////////////////////////////
+
 #include "opencv2/opencv.hpp" 
 #include "opencv2/imgproc.hpp"
 #include <iostream>
@@ -24,14 +22,6 @@ int main()
 		Mat gray, edge, draw; //Initialise the matrix container for gray color image, edge image
 		cvtColor(src, gray, COLOR_BGR2GRAY); //OpenCV code line for converting COLOR to GRAY scale image
 		Canny( gray, edge, 50, 150, 3);
-
-		//TO DO: HOMEWORK
-		// Change the threshold values inside the Canny opencv function 
-		// Canny( gray, edge, 50, 150, 3);  here threshold values are 50, 150, 3 (change these values and see the output of the program)
-		// Analyse what is happening to the edges/lines !!!
-
-
-		//edge.convertTo(draw, CV_8U);
 		imshow("Original frame", src); //displaying original frame
 		imshow("edge detected frame", edge); //displaying edge detected frame
 		if (waitKey(20) == 'q') // waitkey 
@@ -41,5 +31,4 @@ int main()
 	return 0;
 }
 
-//// Compile :
-/* g++ Edge_Detection_Using_RaspiCam.cpp -o opencv_edgedetect -I/usr/local/include -L/usr/local/lib -L/opt/vc/lib -lraspicam -lraspicam_cv -lmmal -lmmal_core -lmmal_util `pkg-config --cflags --libs opencv4` */
+
