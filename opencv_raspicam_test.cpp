@@ -24,6 +24,5 @@ capture.release();
 return 0;
 }
 
-//Execution: 
-// g++ opencv_raspicam_test.cpp -o opencv_raspicam_test -I/usr/local/include -L/usr/local/lib -L/opt/vc/lib -lraspicam -lraspicam_cv -lmmal -lmmal_core -lmmal_util `pkg-config --cflags --libs opencv4`
+
 
