@@ -1,1 +1,2 @@
 # ISEcapstoneDesign
+## Team #6
